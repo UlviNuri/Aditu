@@ -1,0 +1,33 @@
+@import "../../../../scss/mixnin";
+
+main{
+   .img_container {
+      margin-top: 50px;
+      .img_box {
+         position: relative;
+   
+         .banner_img {
+            @include img(100%, 650px, cover, 20px);
+            opacity: 0.5;
+         }
+   
+         .text_box {
+            @include position(absolute, 50%, 50%, 33);
+            transform: translate(-50%, -50%);
+            h2 {
+               @include text(57px, 700, white, null);
+               text-align: center;
+            }
+            p {
+               padding-top: 20px;
+               text-align: center;
+               @include text(18px, 400, white, null);
+               font-family: "Josefin Sans", sans-serif;
+            }
+         }
+      }
+   }
+
+  
+   
+}
